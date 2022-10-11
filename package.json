@@ -1,5 +1,5 @@
 {
-  "name": "elec_wmp",
+  "name": "spotifywidget",
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
@@ -7,9 +7,9 @@
     "start": "electron ."
   },
   "keywords": [],
-  "author": "",
+  "author": "okawaffles",
   "license": "ISC",
-  "description": "",
+  "description": "A spotify widget. It's literally just that.",
   "devDependencies": {
     "electron": "^21.1.0"
   }
