@@ -1,7 +1,9 @@
+let OAUTH_TOKEN = "";
+
 function getStatus() {
     $.ajax({
         beforeSend: function (request) {
-            request.setRequestHeader("Authorization", 'Bearer BQALwoXnNPZxKm5ecLL-z9IsO_47F51dPN2JnWMnBnt7AEIeBuyWvGhW-Z9TrZ-qtrIFufYbSEQzCUT0hViL0AzKz1i-0p3qXNmsf--rsIgcHD5jcN7DPuGkwhlS57l3DqGDknKW_08rbFZ6H8zopLtiYZS1E13anqcMlbwEFnj2zBud9_YqxMMfvE12z6SrXqR9qiL4');
+            request.setRequestHeader("Authorization", 'Bearer ' + OAUTH_TOKEN);
             request.setRequestHeader("Accept", "application/json");
             request.setRequestHeader("Content-Type", "application/json");
         },
