@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>okawaffles Spotify Widget</title>
+
+    <link rel="stylesheet" href="./theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child left_column">
+            <img src="https://okayu.okawaffles.com/content/okawaffles/test%20file.png" alt="AlbumArt" class="album_art"
+                id="albumArt" />
+        </div>
+        <div class="child right_column">
+            <div class="texts">
+                <h3 id="songName">Please wait a moment...</h3>
+                <h4 id="artistName">Loading...</h4>
+            </div>
+
+            <div class="pb_container">
+                <h3 id="timestamps">0:00 / 0:00</h3>
+                <div class="progress_bar" id="progressBar">
+                    <p style="opacity: 0;">progressBar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./runtime.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+/*
+    You can customize these settings to your liking
+    --primary   : Color you'd like to use in the app (HEX)
+
+    You can also edit the rest of the CSS, but be careful, you might break something!
+*/
+
+* {
+    --primary: #5dda4d;
+}
+
+
+/* CSS START */
+
+
+@font-face {
+    font-family: default;
+    src: url("https://okayu.okawaffles.com/assets/fonts/GenJyuuGothic.ttf");
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+    font-family: default;
+}
+
+.child {
+    width: 35%;
+    float: left;
+}
+
+.album_art {
+    width: 130px;
+    height: 130x;
+    border: 10px solid var(--primary);
+    border-radius: 16px;
+}
+
+.texts {
+    color: white;
+}
+
+#songName, #artistName {
+    margin: 0px 5px 0px 0px;
+    width: 100%;
+}
+
+
+.pb_container {
+    position: absolute;
+    bottom: 0;
+}
+
+#timestamps {
+    color: white;
+    margin-bottom: -15px;
+    padding: 0px;
+}
+
+.progress_bar {
+    width: 320%;
+    background-color: var(--primary);
+    border-radius: 12px;
+    margin-top: 3px;
+}
