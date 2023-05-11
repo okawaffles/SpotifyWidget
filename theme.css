@@ -24,6 +24,15 @@ body {
     font-family: GenJyuuGothic;
 }
 
+.bgimg {
+    position: absolute; top: 0; left: 0;
+    z-index: -2;
+
+    filter:blur(8px) brightness(45%);
+    width:100%;
+    margin-top: -35%;
+}
+
 .child {
     width: 35%;
     float: left;
@@ -42,7 +51,7 @@ body {
 
 #songName, #artistName {
     margin: 0px 5px 0px 0px;
-    width: 100%;
+    width: 200%;
 }
 
 
@@ -60,6 +69,9 @@ body {
 .progress_bar {
     width: 320%;
     background-color: var(--primary);
-    border-radius: 12px;
+    border-radius: 6px;
     margin-top: 3px;
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 2px;
 }

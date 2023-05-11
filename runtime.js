@@ -27,6 +27,8 @@ function getStatus() {
             document.getElementById("albumArt").src = data.item.album.images[0].url;
             document.getElementById("progressBar").style.width = ((data.progress_ms / data.item.duration_ms) * 320) + "%";
             document.getElementById("timestamps").innerHTML = convert(data.progress_ms) + " / " + convert(data.item.duration_ms);
+
+            document.getElementById('bgimg').src = data.item.album.images[0].url;
         },
         error: function (a, b, error) {
             alert(`Something went wrong. Please restart the app.\na: ${JSON.stringify(a)}\nb: ${b}\nerr: ${error}`);
