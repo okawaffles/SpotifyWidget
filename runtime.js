@@ -1,6 +1,7 @@
 let OAUTH_TOKEN = "";
 
 function getStatus() {
+    //alert('Bearer ' + OAUTH_TOKEN)
     $.ajax({
         beforeSend: function (request) {
             request.setRequestHeader("Authorization", 'Bearer ' + OAUTH_TOKEN);
@@ -28,7 +29,7 @@ function getStatus() {
             document.getElementById("timestamps").innerHTML = convert(data.progress_ms) + " / " + convert(data.item.duration_ms);
         },
         error: function (a, b, error) {
-            alert("Something went wrong. Please restart the app.");
+            alert(`Something went wrong. Please restart the app.\na: ${JSON.stringify(a)}\nb: ${b}\nerr: ${error}`);
         }
     });
 }
@@ -54,4 +55,13 @@ function tick() {
     setTimeout(tick, 500);
 }
 
-tick();
+let code, state;
+function refreshToken() {
+
+}
+
+// get authorization
+$.ajax({dataType:"json",url:'http://localhost:8888/wants', success:(data) => {
+    OAUTH_TOKEN = data.access_token;
+    tick();
+}});

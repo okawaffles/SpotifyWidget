@@ -2,7 +2,7 @@
     You can customize these settings to your liking
     --primary   : Color you'd like to use in the app (HEX)
 
-    You can also edit the rest of the CSS, but be careful, you might break something!
+    You can also edit the rest of the CSS, but be careful -- you might break something!
 */
 
 * {
@@ -14,14 +14,14 @@
 
 
 @font-face {
-    font-family: default;
-    src: url("https://okayu.okawaffles.com/assets/fonts/GenJyuuGothic.ttf");
+    font-family: GenJyuuGothic;
+    src: url("./GenJyuuGothic.ttf");
 }
 
 body {
     background-color: black;
     overflow: hidden;
-    font-family: default;
+    font-family: GenJyuuGothic;
 }
 
 .child {
